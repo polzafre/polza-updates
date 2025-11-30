@@ -1,6 +1,6 @@
 {
   "versionCode": 18,
   "versionName": "1.0",
-  "apkUrl": "",
-  "changelog": "Первая версия с поддержкой автообновления через GitHub"
+  "apkUrl": "https://github.com/polzafre/polza-updates/releases/download/v1.0/PolzaIPTV-v1.0.apk",
+  "changelog": "Первая версия приложения с автообновлением через GitHub."
 }
