@@ -1,0 +1,2 @@
+private val PUBLIC_VERSION_URL =
+    "https://raw.githubusercontent.com/polzafre/polza-updates/main/version.json"
