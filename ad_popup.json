@@ -1,0 +1,11 @@
+{
+  "enabled": true,
+  "id": "ad_2025_12_17_1",
+  "imageUrl": "https://YOUR_DOMAIN/banner.png",
+  "clickUrl": "https://t.me/Polza_IPTV",
+  "openButtonText": "Открыть",
+  "skipButtonText": "Пропустить",
+  "startAtEpochMs": 0,
+  "endAtEpochMs": 0,
+  "cooldownHours": 24
+}
