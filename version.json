@@ -1,6 +1,6 @@
 {
   "versionCode": 29,
   "versionName": "Polza IPTV",
-  "apkUrl": "https://github.com/polzafre/polza-updates/releases/download/v1.0/Polza.IPTV.apk",
+  "apkUrl": "https://github.com/polzafre/polza-updates/releases/download/v1.1/Polza.IPTV.apk",
   "changelog": "Внедрил будущий аналог программы передач, + теперь при выходе из плеера возвращаетесь на тот же канал, + исправил вылеты при обновлении, + новая категория «ИГРЫ», + новые каналы в категории «КРЕАТОРЫ»"
 }
