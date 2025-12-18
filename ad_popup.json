@@ -1,11 +1,11 @@
 {
   "enabled": true,
-  "id": "ad_now_2025_12_17_22",
+  "id": "ad_now_2025_12_17_23",
   "imageUrl": "https://raw.githubusercontent.com/polzafre/polza-updates/main/banner.png",
   "clickUrl": "https://taplink.cc/polzaiptv",
   "openButtonText": "ПОЖЕРТВОВАНИЕ",
   "skipButtonText": "Пропустить",
   "startAtEpochMs": 0,
   "endAtEpochMs": 0,
-  "cooldownHours": 24
+  "cooldownHours": 0
 }
