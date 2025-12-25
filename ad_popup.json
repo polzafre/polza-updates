@@ -1,11 +1,11 @@
 {
   "enabled": false,
-  "id": "ad_now_2025_12_17_27",
+  "id": "ad_now_2025_12_17_28",
   "imageUrl": "https://raw.githubusercontent.com/polzafre/polza-updates/main/banner.png",
 
   "action": "play",
-  "channelName": "проверочка",
-  "streamUrl": "http://195.9.195.3:8080/hls/218531.m3u8",
+  "channelName": "🕷 Человек-паук возвращается на СкрипачТВ!",
+  "streamUrl": "http://195.9.195.3:8080/hls/217083.m3u8",
 
   "clickUrl": "https://taplink.cc/polzaiptv",
   "openButtonText": "СМОТРЕТЬ",
