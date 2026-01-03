@@ -1,6 +1,6 @@
 {
-  "versionCode": 33,
+  "versionCode": 34,
   "versionName": "Polza IPTV",
   "apkUrl": "https://github.com/polzafre/polza-updates/releases/download/v1.0/Polza.IPTV.apk",
-  "changelog": "С наступающим! Легкое внештатное обновление для ускорения работы проги"
+  "changelog": "Изменён вид плеера, Две новые кнопки в плеере, В меню добавлена кнопка Проверить обновление, Уменьшил окно меню, обновил плейлист"
 }
