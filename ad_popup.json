@@ -1,9 +1,14 @@
 {
-  "enabled": true,
-  "id": "ad_now_2025_12_17_30",
+  "enabled": false,
+  "id": "ad_now_2025_12_17_36",
   "imageUrl": "https://raw.githubusercontent.com/polzafre/polza-updates/main/banner.png",
+
+  "action": "play",
+  "channelName": "НОВЫЙ КАНАЛ - VHDV-TV!",
+  "streamUrl": "http://195.9.195.3:8080/hls/219390.m3u8",
+
   "clickUrl": "https://taplink.cc/polzaiptv",
-  "openButtonText": "ПОЖЕРТВОВАНИЕ",
+  "openButtonText": "СМОТРЕТЬ",
   "skipButtonText": "Пропустить",
   "startAtEpochMs": 0,
   "endAtEpochMs": 0,
