@@ -1,9 +1,14 @@
 {
   "enabled": false,
-  "id": "ad_now_2025_12_17_34",
+  "id": "ad_now_2025_12_17_46",
   "imageUrl": "https://raw.githubusercontent.com/polzafre/polza-updates/main/banner.png",
+
+  "action": "play",
+  "channelName": "УВЛЕКАТЕЛЬНЫЙ КИНО ВЕЧЕР СЕГОДНЯ НА СКРИПАЧ ТВ!",
+  "streamUrl": "https://live20.bozztv.com/akamaissh101/ssh101/scripachmovie/playlist.m3u8",
+
   "clickUrl": "https://taplink.cc/polzaiptv",
-  "openButtonText": "ПОЖЕРТВОВАНИЕ",
+  "openButtonText": "СМОТРЕТЬ",
   "skipButtonText": "Пропустить",
   "startAtEpochMs": 0,
   "endAtEpochMs": 0,
