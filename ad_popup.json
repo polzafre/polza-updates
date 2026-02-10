@@ -1,14 +1,9 @@
 {
   "enabled": false,
-  "id": "ad_now_2025_12_17_49",
+  "id": "ad_now_2025_12_17_35",
   "imageUrl": "https://raw.githubusercontent.com/polzafre/polza-updates/main/banner.png",
-
-  "action": "play",
-  "channelName": "ЗАХВАТЫВАЮЩЕЕ КИНО СЕГОДНЯ НА СКРИПАЧТВ!",
-  "streamUrl": "https://live20.bozztv.com/akamaissh101/ssh101/scripachmovie/playlist.m3u8",
-
-  "clickUrl": "https://taplink.cc/polzaiptv",
-  "openButtonText": "СМОТРЕТЬ",
+  "clickUrl": "https://t.me/eiraVPN_bot?start=ref_344df206-09a9-4222-9804-cacb60d049b4",
+  "openButtonText": "Включить VPN",
   "skipButtonText": "Пропустить",
   "startAtEpochMs": 0,
   "endAtEpochMs": 0,
