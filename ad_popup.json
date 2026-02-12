@@ -1,9 +1,14 @@
 {
   "enabled": false,
-  "id": "ad_now_2025_12_17_37",
+  "id": "ad_now_2025_12_17_49",
   "imageUrl": "https://raw.githubusercontent.com/polzafre/polza-updates/main/banner.png",
-  "clickUrl": "https://t.me/eiraVPN_bot?start=ref_344df206-09a9-4222-9804-cacb60d049b4",
-  "openButtonText": "Включить VPN",
+
+  "action": "play",
+  "channelName": "КИНО НА KINOMIX",
+  "streamUrl": "http://kinowalk.hopto.org/yurich_kinomix_live",
+
+  "clickUrl": "https://taplink.cc/polzaiptv",
+  "openButtonText": "СМОТРЕТЬ",
   "skipButtonText": "Пропустить",
   "startAtEpochMs": 0,
   "endAtEpochMs": 0,
