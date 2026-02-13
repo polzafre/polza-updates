@@ -1,14 +1,9 @@
 {
-  "enabled": false,
-  "id": "ad_now_2025_12_17_51",
+  "enabled": true,
+  "id": "ad_now_2025_12_17_35",
   "imageUrl": "https://raw.githubusercontent.com/polzafre/polza-updates/main/banner.png",
-
-  "action": "play",
-  "channelName": "ВЗРЫВНОЙ КИНОДЕНЬ НА СКРИПАЧТВ!",
-  "streamUrl": "https://live20.bozztv.com/akamaissh101/ssh101/scripachmovie/playlist.m3u8",
-
   "clickUrl": "https://taplink.cc/polzaiptv",
-  "openButtonText": "СМОТРЕТЬ",
+  "openButtonText": "ПОЖЕРТВОВАНИЕ",
   "skipButtonText": "Пропустить",
   "startAtEpochMs": 0,
   "endAtEpochMs": 0,
