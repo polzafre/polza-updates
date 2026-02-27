@@ -1,14 +1,9 @@
 {
-  "enabled": false,
-  "id": "ad_now_2025_12_17_57",
+  "enabled": true,
+  "id": "ad_now_2025_12_17_58",
   "imageUrl": "https://raw.githubusercontent.com/polzafre/polza-updates/main/banner.png",
-
-  "action": "play",
-  "channelName": "СкрипачТВ приглашает на киномарафон",
-  "streamUrl": "https://kinostreammedia.hopto.org/SCRIPACHTV/index.m3u8",
-
   "clickUrl": "https://taplink.cc/polzaiptv",
-  "openButtonText": "СМОТРЕТЬ",
+  "openButtonText": "ПОЖЕРТВОВАНИЕ",
   "skipButtonText": "Пропустить",
   "startAtEpochMs": 0,
   "endAtEpochMs": 0,
