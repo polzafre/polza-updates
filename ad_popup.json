@@ -1,11 +1,11 @@
 {
-  "enabled": false,
-  "id": "ad_now_2025_12_17_62",
+  "enabled": true,
+  "id": "ad_now_2025_12_17_63",
   "imageUrl": "https://raw.githubusercontent.com/polzafre/polza-updates/main/banner.png",
 
   "action": "play",
-  "channelName": "сначала хаос, потом колдовство, и на закуску — рок-н-ролл!",
-  "streamUrl": "https://kinostreammedia.hopto.org/SCRIPACHTV/index.m3u8",
+  "channelName": "Кинотерапия на все случаи жизни!",
+  "streamUrl": "http://kinowalk.hopto.org/scripachtv_live",
 
   "clickUrl": "https://taplink.cc/polzaiptv",
   "openButtonText": "СМОТРЕТЬ",
