@@ -1,14 +1,9 @@
 {
   "enabled": true,
-  "id": "ad_now_2025_12_17_68",
+  "id": "ad_now_2025_12_17_69",
   "imageUrl": "https://raw.githubusercontent.com/polzafre/polza-updates/main/banner.png",
-
-  "action": "play",
-  "channelName": "КИНО НА СКРИПАЧТВ!",
-  "streamUrl": "http://kinowalk.hopto.org/scripachtv_live",
-
   "clickUrl": "https://taplink.cc/polzaiptv",
-  "openButtonText": "СМОТРЕТЬ",
+  "openButtonText": "ПОЖЕРТВОВАНИЕ",
   "skipButtonText": "Пропустить",
   "startAtEpochMs": 0,
   "endAtEpochMs": 0,
