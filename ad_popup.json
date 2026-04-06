@@ -1,9 +1,14 @@
 {
-  "enabled": true,
-  "id": "ad_now_2025_12_17_113",
+  "enabled": false,
+  "id": "ad_now_2025_12_17_114",
   "imageUrl": "https://raw.githubusercontent.com/polzafre/polza-updates/main/banner.png",
-  "clickUrl": "https://t.me/revolyo_support",
-    "openButtonText": "ВЗЯТЬ ТЕСТ",
+
+  "action": "play",
+  "channelName": "NikNik-TV",
+  "streamUrl": "https://hostrec.ru/live/wic2AtEFCLwsZcUkAgtZcjlYgjc.m3u8",
+
+  "clickUrl": "https://taplink.cc/polzaiptv",
+  "openButtonText": "СМОТРЕТЬ",
   "skipButtonText": "Пропустить",
   "startAtEpochMs": 0,
   "endAtEpochMs": 0,
