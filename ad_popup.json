@@ -1,10 +1,10 @@
 {
   "enabled": false,
-  "id": "ad_now_2025_12_17_114",
+  "id": "ad_now_2025_12_17_115",
   "imageUrl": "https://raw.githubusercontent.com/polzafre/polza-updates/main/banner.png",
 
   "action": "play",
-  "channelName": "Scripach TV",
+  "channelName": "NIKNIK-TV",
   "streamUrl": "https://hostrec.ru/live/wic2AtEFCLwsZcUkAgtZcjlYgjc.m3u8",
 
   "clickUrl": "https://taplink.cc/polzaiptv",
