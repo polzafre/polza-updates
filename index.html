@@ -28,12 +28,12 @@
             margin: 0 auto;
         }
 
-        /* ЦЕНТРАЛЬНЫЙ ОСНОВНОЙ БЛОК (АКЦЕНТ) */
+        /* ЦЕНТРАЛЬНЫЙ ОСНОВНОЙ БЛОК (ЯРКИЙ АКЦЕНТ) */
         .container {
             max-width: 500px;
             width: 100%;
-            background: rgba(7, 20, 11, 0.92);
-            border: 1px solid rgba(0, 230, 118, 0.32);
+            background: rgba(7, 20, 11, 0.94);
+            border: 1px solid rgba(0, 230, 118, 0.35);
             border-radius: 28px;
             padding: 34px 22px;
             text-align: center;
@@ -43,90 +43,97 @@
             z-index: 2;
         }
 
-        /* БОКОВЫЕ ПАНЕЛИ (НЕПРИМЕТНЫЕ, ЧИТАБЕЛЬНЫЕ) */
+        /* БОКОВЫЕ ПАНЕЛИ (МАКСИМАЛЬНО НЕПРИМЕТНЫЕ, МЯГКО СЛИВАЮТСЯ С ФОНОМ) */
         .side-panel {
             flex: 1;
             max-width: 350px;
-            background: rgba(6, 17, 10, 0.62);
-            border: 1px solid rgba(0, 230, 118, 0.15);
+            background: rgba(3, 10, 5, 0.38); /* В два раза темнее и прозрачнее */
+            border: 1px solid rgba(0, 230, 118, 0.08); /* Едва заметная тонкая грань */
             border-radius: 24px;
-            padding: 26px 20px;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            padding: 24px 18px;
+            backdrop-filter: blur(8px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
             text-align: left;
-            transition: all 0.25s ease;
+            opacity: 0.72; /* Снижена яркость в покое */
+            transition: all 0.3s ease;
         }
+
+        /* При наведении мыши плавно становится ярче для чтения */
         .side-panel:hover {
-            border-color: rgba(0, 230, 118, 0.3);
-            background: rgba(7, 20, 11, 0.75);
+            opacity: 1;
+            background: rgba(6, 17, 10, 0.75);
+            border-color: rgba(0, 230, 118, 0.25);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.45);
         }
 
         .side-header {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin-bottom: 18px;
-            padding-bottom: 12px;
-            border-bottom: 1px solid rgba(0, 230, 118, 0.15);
+            margin-bottom: 16px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(0, 230, 118, 0.08);
         }
         .side-title {
-            font-size: 16px;
+            font-size: 15px;
             font-weight: 700;
-            color: #E2ECE5;
+            color: #C1D0C6;
             display: flex;
             align-items: center;
             gap: 8px;
             letter-spacing: 0.3px;
         }
         .side-title svg {
-            width: 18px;
-            height: 18px;
-            fill: #00E676;
+            width: 17px;
+            height: 17px;
+            fill: #5EAA7C; /* Спокойный приглушенный зелёный */
             flex-shrink: 0;
         }
         .side-tag {
-            font-size: 11px;
+            font-size: 10px;
             font-weight: 700;
-            background: rgba(0, 230, 118, 0.12);
-            color: #00E676;
+            background: rgba(0, 230, 118, 0.05);
+            color: #6CBD89;
             padding: 3px 8px;
             border-radius: 8px;
-            border: 1px solid rgba(0, 230, 118, 0.25);
+            border: 1px solid rgba(0, 230, 118, 0.15);
+            letter-spacing: 0.4px;
         }
 
         /* Список карточек внутри боковых блоков */
         .side-list {
             display: flex;
             flex-direction: column;
-            gap: 14px;
+            gap: 12px;
         }
         .side-card {
-            background: rgba(255, 255, 255, 0.025);
-            border: 1px solid rgba(255, 255, 255, 0.06);
-            border-radius: 14px;
-            padding: 12px 14px;
+            background: rgba(255, 255, 255, 0.015);
+            border: 1px solid rgba(255, 255, 255, 0.035);
+            border-radius: 12px;
+            padding: 10px 12px;
         }
         .side-card h4 {
-            font-size: 13px;
+            font-size: 12.5px;
             font-weight: 700;
-            color: #00E676;
-            margin-bottom: 4px;
+            color: #6CBD89; /* Спокойный акцент вместо режущего неона */
+            margin-bottom: 3px;
             display: flex;
             align-items: center;
             gap: 6px;
         }
         .side-card p {
-            font-size: 12px;
-            color: #ADC2B2;
-            line-height: 1.45;
+            font-size: 11.5px;
+            color: #8C9F92; /* Чёткий легко читаемый текст */
+            line-height: 1.4;
         }
 
         /* Дата / версия в патчноуте */
         .patch-date {
-            font-size: 11px;
-            color: #6C8572;
-            font-weight: 600;
-            margin-bottom: 6px;
+            font-size: 10px;
+            color: #556E5C;
+            font-weight: 700;
+            margin-bottom: 4px;
+            letter-spacing: 0.3px;
         }
 
         /* ЭЛЕМЕНТЫ ЦЕНТРАЛЬНОГО ОКНА */
@@ -388,11 +395,13 @@
                 order: 2; /* Описание идет ниже ссылок */
                 max-width: 520px;
                 width: 100%;
+                opacity: 0.9;
             }
             .side-right {
                 order: 3; /* Обновления в самом низу */
                 max-width: 520px;
                 width: 100%;
+                opacity: 0.9;
             }
         }
     </style>
@@ -466,7 +475,7 @@
                 <div class="text">Для устройств Android</div>
             </div>
             <div class="feature-card">
-                <svg viewBox="0 0 24 24"><path d="M20 6h-2.18c.11-.31.18-.65.18-1 0-1.66-1.34-3-3-3-1.05 0-1.96.54-2.5 1.35l-.5.65-.5-.65C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1h-2.22l.74-.99c.31-.42.74-.68 1.48-.68zM9 4c.74 0 1.17.26 1.48.68l.74.99H9c-.55 0-1-.45-1-1s.45-1 1-1zm11 15H4v-2h16v2zm0-5H4V8h5.08L7 10.83 8.62 12 11 8.76V8h2v.76L15.38 12 17 10.83 14.92 8H20v6z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M20 6h-2.18c.11-.31.18-.65.18-1 0-1.66-1.34-3-3-3-1.05 0-1.96.54-2.5 1.35l-.5.65-.5-.65C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.1.9 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.1-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1h-2.22l.74-.99c.31-.42.74-.68 1.48-.68zM9 4c.74 0 1.17.26 1.48.68l.74.99H9c-.55 0-1-.45-1-1s.45-1 1-1zm11 15H4v-2h16v2zm0-5H4V8h5.08L7 10.83 8.62 12 11 8.76V8h2v.76L15.38 12 17 10.83 14.92 8H20v6z"/></svg>
                 <div class="text">100% Бесплатно</div>
             </div>
             <div class="feature-card">
