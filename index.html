@@ -53,6 +53,7 @@
             font-weight: 500;
             margin-bottom: 28px;
         }
+
         /* Главная кнопка скачивания */
         .btn-download {
             display: flex;
@@ -68,7 +69,7 @@
             border-radius: 20px;
             box-shadow: 0 8px 25px rgba(0, 230, 118, 0.35);
             transition: all 0.2s ease;
-            margin-bottom: 24px;
+            margin-bottom: 10px;
         }
         .btn-download:hover {
             transform: translateY(-2px);
@@ -80,6 +81,43 @@
             height: 24px;
             fill: #05140A;
         }
+
+        /* Компактные красные кнопки резервных зеркал */
+        .backup-links {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 24px;
+        }
+        .btn-backup {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            background: #d32f2f;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 11px;
+            font-weight: 800;
+            padding: 9px 8px;
+            border-radius: 12px;
+            letter-spacing: 0.4px;
+            box-shadow: 0 4px 15px rgba(211, 47, 47, 0.35);
+            transition: all 0.2s ease;
+            border: 1px solid rgba(255, 82, 82, 0.3);
+        }
+        .btn-backup:hover {
+            background: #f44336;
+            box-shadow: 0 6px 20px rgba(244, 67, 54, 0.5);
+            transform: translateY(-2px);
+        }
+        .btn-backup svg {
+            width: 14px;
+            height: 14px;
+            fill: #ffffff;
+            flex-shrink: 0;
+        }
+
         /* 3 карточки преимуществ */
         .features {
             display: grid;
@@ -179,7 +217,6 @@
             gap: 10px;
         }
 
-        /* ✅ ЯРКИЕ КНОПКИ ОПЛАТЫ КАК КНОПКА СКАЧИВАНИЯ */
         .btn-donate {
             display: flex;
             align-items: center;
@@ -247,6 +284,18 @@
         <svg viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
         СКАЧАТЬ ДЛЯ ANDROID (.APK)
     </a>
+
+    <!-- РЕЗЕРВНЫЕ КНОПКИ СКАЧИВАНИЯ -->
+    <div class="backup-links">
+        <a href="https://disk.yandex.ru/d/9193RYjOS4P4IA" target="_blank" class="btn-backup">
+            <svg viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+            <span>РЕЗЕРВНАЯ 1</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1tmeTehrwLmZm94IrkF606xNcHAhmSSfm?usp=drive_link" target="_blank" class="btn-backup">
+            <svg viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+            <span>РЕЗЕРВНАЯ 2</span>
+        </a>
+    </div>
 
     <!-- 3 КАРТОЧКИ ПРЕИМУЩЕСТВ -->
     <div class="features">
