@@ -47,14 +47,14 @@
         .side-panel {
             flex: 1;
             max-width: 350px;
-            background: rgba(3, 10, 5, 0.38); /* В два раза темнее и прозрачнее */
-            border: 1px solid rgba(0, 230, 118, 0.08); /* Едва заметная тонкая грань */
+            background: rgba(3, 10, 5, 0.38);
+            border: 1px solid rgba(0, 230, 118, 0.08);
             border-radius: 24px;
             padding: 24px 18px;
             backdrop-filter: blur(8px);
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
             text-align: left;
-            opacity: 0.72; /* Снижена яркость в покое */
+            opacity: 0.72;
             transition: all 0.3s ease;
         }
 
@@ -86,7 +86,7 @@
         .side-title svg {
             width: 17px;
             height: 17px;
-            fill: #5EAA7C; /* Спокойный приглушенный зелёный */
+            fill: #5EAA7C;
             flex-shrink: 0;
         }
         .side-tag {
@@ -115,7 +115,7 @@
         .side-card h4 {
             font-size: 12.5px;
             font-weight: 700;
-            color: #6CBD89; /* Спокойный акцент вместо режущего неона */
+            color: #6CBD89;
             margin-bottom: 3px;
             display: flex;
             align-items: center;
@@ -123,7 +123,7 @@
         }
         .side-card p {
             font-size: 11.5px;
-            color: #8C9F92; /* Чёткий легко читаемый текст */
+            color: #8C9F92;
             line-height: 1.4;
         }
 
@@ -190,6 +190,35 @@
             width: 24px;
             height: 24px;
             fill: #05140A;
+        }
+
+        /* Стиль счетчика скачиваний под кнопкой */
+        .download-counter {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+            font-size: 11.5px;
+            color: #8C9F92;
+            font-weight: 600;
+            margin-bottom: 14px;
+            letter-spacing: 0.3px;
+        }
+        .download-counter strong {
+            color: #00E676;
+            font-weight: 800;
+        }
+        .counter-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #00E676;
+            box-shadow: 0 0 8px #00E676;
+            animation: pulse-dot 2s infinite;
+        }
+        @keyframes pulse-dot {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.35; transform: scale(0.85); }
         }
 
         /* Миниатюрные красные кнопки резервных зеркал */
@@ -388,17 +417,17 @@
                 gap: 18px;
             }
             .container {
-                order: 1; /* Центр всегда первый на телефоне */
+                order: 1;
                 max-width: 520px;
             }
             .side-left {
-                order: 2; /* Описание идет ниже ссылок */
+                order: 2;
                 max-width: 520px;
                 width: 100%;
                 opacity: 0.9;
             }
             .side-right {
-                order: 3; /* Обновления в самом низу */
+                order: 3;
                 max-width: 520px;
                 width: 100%;
                 opacity: 0.9;
@@ -456,6 +485,12 @@
             СКАЧАТЬ ДЛЯ ANDROID (.APK)
         </a>
 
+        <!-- ЖИВОЙ СЧЕТЧИК СКАЧИВАНИЙ ИЗ GITHUB API -->
+        <div id="downloads-badge" class="download-counter">
+            <span class="counter-dot"></span>
+            <span>Скачали: <strong id="download-count">...</strong></span>
+        </div>
+
         <!-- МИНИАТЮРНЫЕ РЕЗЕРВНЫЕ КНОПКИ СКАЧИВАНИЯ -->
         <div class="backup-links">
             <a href="https://disk.yandex.ru/d/9193RYjOS4P4IA" target="_blank" class="btn-backup">
@@ -475,7 +510,7 @@
                 <div class="text">Для устройств Android</div>
             </div>
             <div class="feature-card">
-                <svg viewBox="0 0 24 24"><path d="M20 6h-2.18c.11-.31.18-.65.18-1 0-1.66-1.34-3-3-3-1.05 0-1.96.54-2.5 1.35l-.5.65-.5-.65C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.1.9 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.1-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1h-2.22l.74-.99c.31-.42.74-.68 1.48-.68zM9 4c.74 0 1.17.26 1.48.68l.74.99H9c-.55 0-1-.45-1-1s.45-1 1-1zm11 15H4v-2h16v2zm0-5H4V8h5.08L7 10.83 8.62 12 11 8.76V8h2v.76L15.38 12 17 10.83 14.92 8H20v6z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M20 6h-2.18c.11-.31.18-.65.18-1 0-1.66-1.34-3-3-3-1.05 0-1.96.54-2.5 1.35l-.5.65-.5-.65C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.1.9 2 2 2h16c1.1 0 2-.89 2-2V8c0-1.1-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1h-2.22l.74-.99c.31-.42.74-.68 1.48-.68zM9 4c.74 0 1.17.26 1.48.68l.74.99H9c-.55 0-1-.45-1-1s.45-1 1-1zm11 15H4v-2h16v2zm0-5H4V8h5.08L7 10.83 8.62 12 11 8.76V8h2v.76L15.38 12 17 10.83 14.92 8H20v6z"/></svg>
                 <div class="text">100% Бесплатно</div>
             </div>
             <div class="feature-card">
@@ -576,6 +611,41 @@
     </aside>
 
 </div>
+
+<!-- СКРИПТ ПОДСЧЕТА СКАЧИВАНИЙ ИЗ GITHUB API -->
+<script>
+    (function() {
+        fetch('https://api.github.com/repos/polzafre/polza-updates/releases')
+            .then(res => {
+                if (!res.ok) throw new Error('API error');
+                return res.json();
+            })
+            .then(releases => {
+                let totalDownloads = 0;
+                if (Array.isArray(releases)) {
+                    releases.forEach(rel => {
+                        if (rel.assets && Array.isArray(rel.assets)) {
+                            rel.assets.forEach(asset => {
+                                if (asset.name && asset.name.toLowerCase().endsWith('.apk')) {
+                                    totalDownloads += (asset.download_count || 0);
+                                }
+                            });
+                        }
+                    });
+                }
+                const countElement = document.getElementById('download-count');
+                if (countElement && totalDownloads > 0) {
+                    countElement.textContent = totalDownloads.toLocaleString('ru-RU') + ' раз';
+                } else if (countElement) {
+                    countElement.textContent = totalDownloads.toLocaleString('ru-RU');
+                }
+            })
+            .catch(() => {
+                const badge = document.getElementById('downloads-badge');
+                if (badge) badge.style.display = 'none';
+            });
+    })();
+</script>
 
 </body>
 </html>
